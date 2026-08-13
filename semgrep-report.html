@@ -1,0 +1,2504 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Semgrep Report Semgrep Scan
+    </title>
+    <style>
+    body{
+    background: lightgrey;
+    }
+    pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+} 
+
+html {
+    font-size: 70%; 
+}
+pre, code {
+        font-family: Consolas, monospace;
+        font-size: 12px;
+    }
+
+    /* Set the background and border for the code snippet */
+    pre {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 16px;
+    }
+
+</style>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="p-5">
+    <br><br>
+    <p class="pt-3 pb-3 text-center"><img src="https://semgrep.dev/build/assets/semgrep-logo-dark-F_zJCZNg.svg" alt="Semgrep CE" width="350px"></p>
+    <h3> Scan of Semgrep Report  </h3>
+    <h5 class="text-secondary fw-normal"> Sat, 08 Aug 2026 20:11:10 UTC </h5>
+    <hr>
+
+    <h4 class="fw-normal mb-3"> Found <strong>22</strong> potential issues across <strong>130</strong> files. </h4>
+
+    <div class="d-flex text-center">
+        <div class="w-25 border-danger me-2">
+            <div class="alert alert-danger mb-3">
+                <div class="card-header py-2">
+                    <p class="fs-1 mb-0"> 12</p>
+                </div>
+                <hr>
+                <div class="card-body py-1">
+                    <p class="mb-0">High</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-25 border-warning me-2">
+            <div class="alert alert-warning mb-3">
+                <div class="card-header py-2">
+                    <p class="fs-1 mb-0">10</p>
+                </div>
+                <hr>
+                <div class="card-body py-1">
+                    <p class="mb-0">Moderate</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-25 border-primary me-2">
+            <div class="alert alert-primary mb-3">
+                <div class="card-header py-2">
+                    <p class="fs-1 mb-0">0</p>
+                </div>
+                <hr>
+                <div class="card-body py-1">
+                    <p class="mb-0">Low</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-25 border-secondary me-2">
+            <div class="alert alert-secondary mb-3">
+                <div class="card-header py-2">
+                    <p class="fs-1 mb-0">0</p>
+                </div>
+                <hr>
+                <div class="card-body py-1">
+                    <p class="mb-0">Other</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+        
+    <p class=mb-4>&nbsp;</p>
+
+    
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  generic.secrets.security.detected-codeclimate.detected-codeclimate </h5>
+</div>
+
+<p><strong>Description :</strong> CodeClimate detected </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>276</strong>, Column <strong>10</strong> </li>
+<li> To : Line <strong>276</strong>, Column <strong>98</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/generic.secrets.security.detected-codeclimate.detected-codeclimate">https://semgrep.dev/r/generic.secrets.security.detected-codeclimate.detected-codeclimate</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures">  https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-798: Use of Hard-coded Credentials</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A07:2021 - Identification and Authentication Failures</li>
+    
+        <li> A07:2025 - Authentication Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> secrets, codeclimate</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  generic.secrets.security.detected-facebook-access-token.detected-facebook-access-token </h5>
+</div>
+
+<p><strong>Description :</strong> Facebook Access Token detected </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>278</strong>, Column <strong>10</strong> </li>
+<li> To : Line <strong>278</strong>, Column <strong>180</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/generic.secrets.security.detected-facebook-access-token.detected-facebook-access-token">https://semgrep.dev/r/generic.secrets.security.detected-facebook-access-token.detected-facebook-access-token</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures">  https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-798: Use of Hard-coded Credentials</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A07:2021 - Identification and Authentication Failures</li>
+    
+        <li> A07:2025 - Authentication Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> secrets, facebook</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  generic.secrets.security.detected-google-oauth-access-token.detected-google-oauth-access-token </h5>
+</div>
+
+<p><strong>Description :</strong> Google OAuth Access Token detected </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>283</strong>, Column <strong>10</strong> </li>
+<li> To : Line <strong>283</strong>, Column <strong>177</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/generic.secrets.security.detected-google-oauth-access-token.detected-google-oauth-access-token">https://semgrep.dev/r/generic.secrets.security.detected-google-oauth-access-token.detected-google-oauth-access-token</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures">  https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-798: Use of Hard-coded Credentials</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A07:2021 - Identification and Authentication Failures</li>
+    
+        <li> A07:2025 - Authentication Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> secrets, google</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  generic.secrets.security.detected-heroku-api-key.detected-heroku-api-key </h5>
+</div>
+
+<p><strong>Description :</strong> Heroku API Key detected </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>285</strong>, Column <strong>10</strong> </li>
+<li> To : Line <strong>285</strong>, Column <strong>101</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/generic.secrets.security.detected-heroku-api-key.detected-heroku-api-key">https://semgrep.dev/r/generic.secrets.security.detected-heroku-api-key.detected-heroku-api-key</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures">  https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-798: Use of Hard-coded Credentials</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A07:2021 - Identification and Authentication Failures</li>
+    
+        <li> A07:2025 - Authentication Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> secrets, heroku</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  generic.secrets.security.detected-hockeyapp.detected-hockeyapp </h5>
+</div>
+
+<p><strong>Description :</strong> HockeyApp detected </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>286</strong>, Column <strong>7</strong> </li>
+<li> To : Line <strong>286</strong>, Column <strong>71</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/generic.secrets.security.detected-hockeyapp.detected-hockeyapp">https://semgrep.dev/r/generic.secrets.security.detected-hockeyapp.detected-hockeyapp</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures">  https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-798: Use of Hard-coded Credentials</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A07:2021 - Identification and Authentication Failures</li>
+    
+        <li> A07:2025 - Authentication Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> secrets, hockeyapp</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  generic.secrets.security.detected-outlook-team.detected-outlook-team </h5>
+</div>
+
+<p><strong>Description :</strong> Outlook Team detected </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>288</strong>, Column <strong>10</strong> </li>
+<li> To : Line <strong>288</strong>, Column <strong>81</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/generic.secrets.security.detected-outlook-team.detected-outlook-team">https://semgrep.dev/r/generic.secrets.security.detected-outlook-team.detected-outlook-team</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures">  https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-798: Use of Hard-coded Credentials</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A07:2021 - Identification and Authentication Failures</li>
+    
+        <li> A07:2025 - Authentication Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> secrets, outlook</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  generic.secrets.security.detected-paypal-braintree-access-token.detected-paypal-braintree-access-token </h5>
+</div>
+
+<p><strong>Description :</strong> PayPal Braintree Access Token detected </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>290</strong>, Column <strong>10</strong> </li>
+<li> To : Line <strong>290</strong>, Column <strong>83</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/generic.secrets.security.detected-paypal-braintree-access-token.detected-paypal-braintree-access-token">https://semgrep.dev/r/generic.secrets.security.detected-paypal-braintree-access-token.detected-paypal-braintree-access-token</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures">  https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-798: Use of Hard-coded Credentials</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A07:2021 - Identification and Authentication Failures</li>
+    
+        <li> A07:2025 - Authentication Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> secrets, paypal, braintree</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  generic.secrets.security.detected-slack-token.detected-slack-token </h5>
+</div>
+
+<p><strong>Description :</strong> Slack Token detected </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>292</strong>, Column <strong>10</strong> </li>
+<li> To : Line <strong>292</strong>, Column <strong>86</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/generic.secrets.security.detected-slack-token.detected-slack-token">https://semgrep.dev/r/generic.secrets.security.detected-slack-token.detected-slack-token</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://github.com/davidburkitt/python-secret-scanner/blob/335a1f6dab8de59cf39063e57aea39a58951e939/patterns.txt#L58">  https://github.com/davidburkitt/python-secret-scanner/blob/335a1f6dab8de59cf39063e57aea39a58951e939/patterns.txt#L58</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-798: Use of Hard-coded Credentials</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A07:2021 - Identification and Authentication Failures</li>
+    
+        <li> A07:2025 - Authentication Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> secrets, slack</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.lang.security.detect-child-process.detect-child-process </h5>
+</div>
+
+<p><strong>Description :</strong> Detected calls to child_process from a function argument `command`. This could lead to a command injection if the input is user controllable. Try to avoid calls to child_process, and if it is needed ensure user input is correctly sanitized or sandboxed.  </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.service.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>25</strong>, Column <strong>26</strong> </li>
+<li> To : Line <strong>25</strong>, Column <strong>30</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.lang.security.detect-child-process.detect-child-process">https://semgrep.dev/r/javascript.lang.security.detect-child-process.detect-child-process</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Nodejs_Security_Cheat_Sheet.html#do-not-use-dangerous-functions">  https://cheatsheetseries.owasp.org/cheatsheets/Nodejs_Security_Cheat_Sheet.html#do-not-use-dangerous-functions</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-78: Improper Neutralization of Special Elements used in an OS Command (&#39;OS Command Injection&#39;)</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A01:2017 - Injection</li>
+    
+        <li> A03:2021 - Injection</li>
+    
+        <li> A05:2025 - Injection</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> javascript</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  typescript.react.security.react-insecure-request.react-insecure-request </h5>
+</div>
+
+<p><strong>Description :</strong> Unencrypted request over HTTP detected. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/email/email.service.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>130</strong>, Column <strong>26</strong> </li>
+<li> To : Line <strong>131</strong>, Column <strong>43</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/typescript.react.security.react-insecure-request.react-insecure-request">https://semgrep.dev/r/typescript.react.security.react-insecure-request.react-insecure-request</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://www.npmjs.com/package/axios">  https://www.npmjs.com/package/axios</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-319: Cleartext Transmission of Sensitive Information</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A03:2017 - Sensitive Data Exposure</li>
+    
+        <li> A02:2021 - Cryptographic Failures</li>
+    
+        <li> A04:2025 - Cryptographic Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> react</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  typescript.react.security.react-insecure-request.react-insecure-request </h5>
+</div>
+
+<p><strong>Description :</strong> Unencrypted request over HTTP detected. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/email/email.service.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>168</strong>, Column <strong>18</strong> </li>
+<li> To : Line <strong>171</strong>, Column <strong>9</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/typescript.react.security.react-insecure-request.react-insecure-request">https://semgrep.dev/r/typescript.react.security.react-insecure-request.react-insecure-request</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://www.npmjs.com/package/axios">  https://www.npmjs.com/package/axios</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-319: Cleartext Transmission of Sensitive Information</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A03:2017 - Sensitive Data Exposure</li>
+    
+        <li> A02:2021 - Cryptographic Failures</li>
+    
+        <li> A04:2025 - Cryptographic Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> react</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-danger
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.lang.security.detect-child-process.detect-child-process </h5>
+</div>
+
+<p><strong>Description :</strong> Detected calls to child_process from a function argument `input`. This could lead to a command injection if the input is user controllable. Try to avoid calls to child_process, and if it is needed ensure user input is correctly sanitized or sandboxed.  </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/mcp/mcp.tool-executor.service.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>272</strong>, Column <strong>31</strong> </li>
+<li> To : Line <strong>272</strong>, Column <strong>35</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.lang.security.detect-child-process.detect-child-process">https://semgrep.dev/r/javascript.lang.security.detect-child-process.detect-child-process</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Nodejs_Security_Cheat_Sheet.html#do-not-use-dangerous-functions">  https://cheatsheetseries.owasp.org/cheatsheets/Nodejs_Security_Cheat_Sheet.html#do-not-use-dangerous-functions</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-78: Improper Neutralization of Special Elements used in an OS Command (&#39;OS Command Injection&#39;)</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A01:2017 - Injection</li>
+    
+        <li> A03:2021 - Injection</li>
+    
+        <li> A05:2025 - Injection</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> javascript</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  typescript.nestjs.security.audit.nestjs-open-redirect.nestjs-open-redirect </h5>
+</div>
+
+<p><strong>Description :</strong> Untrusted user input in {url: ...} can result in Open Redirect vulnerability. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>95</strong>, Column <strong>5</strong> </li>
+<li> To : Line <strong>95</strong>, Column <strong>20</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/typescript.nestjs.security.audit.nestjs-open-redirect.nestjs-open-redirect">https://semgrep.dev/r/typescript.nestjs.security.audit.nestjs-open-redirect.nestjs-open-redirect</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control">  https://owasp.org/Top10/A01_2021-Broken_Access_Control</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-601: URL Redirection to Untrusted Site (&#39;Open Redirect&#39;)</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A01:2021 - Broken Access Control</li>
+    
+        <li> A01:2025 - Broken Access Control</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> nestjs</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.express.security.audit.express-libxml-vm-noent.express-libxml-vm-noent </h5>
+</div>
+
+<p><strong>Description :</strong> Detected use of parseXml() function with the `noent` field set to `true`. This can lead to an XML External Entities (XXE) attack if untrusted data is passed into it. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>121</strong>, Column <strong>20</strong> </li>
+<li> To : Line <strong>125</strong>, Column <strong>7</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.express.security.audit.express-libxml-vm-noent.express-libxml-vm-noent">https://semgrep.dev/r/javascript.express.security.audit.express-libxml-vm-noent.express-libxml-vm-noent</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html">  https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-611: Improper Restriction of XML External Entity Reference</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A04:2017 - XML External Entities (XXE)</li>
+    
+        <li> A05:2021 - Security Misconfiguration</li>
+    
+        <li> A02:2025 - Security Misconfiguration</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> express</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.browser.security.eval-detected.eval-detected </h5>
+</div>
+
+<p><strong>Description :</strong> Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this content can be input from outside the program, this may be a code injection vulnerability. Ensure evaluated content is not definable by external sources. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/app.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>219</strong>, Column <strong>22</strong> </li>
+<li> To : Line <strong>219</strong>, Column <strong>52</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.browser.security.eval-detected.eval-detected">https://semgrep.dev/r/javascript.browser.security.eval-detected.eval-detected</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A03_2021-Injection">  https://owasp.org/Top10/A03_2021-Injection</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code (&#39;Eval Injection&#39;)</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A03:2021 - Injection</li>
+    
+        <li> A05:2025 - Injection</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> browser</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.lang.security.audit.incomplete-sanitization.incomplete-sanitization </h5>
+</div>
+
+<p><strong>Description :</strong> `to.replace` method will only replace the first occurrence when used with a string argument (&#39;\n&#39;). If this method is used for escaping of dangerous data then there is a possibility for a bypass. Try to use sanitization library instead or use a Regex with a global flag. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/email/email.service.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>60</strong>, Column <strong>10</strong> </li>
+<li> To : Line <strong>60</strong>, Column <strong>33</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.lang.security.audit.incomplete-sanitization.incomplete-sanitization">https://semgrep.dev/r/javascript.lang.security.audit.incomplete-sanitization.incomplete-sanitization</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/Top10/A03_2021-Injection">  https://owasp.org/Top10/A03_2021-Injection</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-116: Improper Encoding or Escaping of Output</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A03:2021 - Injection</li>
+    
+        <li> A05:2025 - Injection</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> javascript</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal </h5>
+</div>
+
+<p><strong>Description :</strong> Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/file/file.service.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>29</strong>, Column <strong>42</strong> </li>
+<li> To : Line <strong>29</strong>, Column <strong>46</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal">https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/www-community/attacks/Path_Traversal">  https://owasp.org/www-community/attacks/Path_Traversal</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-22: Improper Limitation of a Pathname to a Restricted Directory (&#39;Path Traversal&#39;)</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A05:2017 - Broken Access Control</li>
+    
+        <li> A01:2021 - Broken Access Control</li>
+    
+        <li> A01:2025 - Broken Access Control</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> javascript, node.js</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal </h5>
+</div>
+
+<p><strong>Description :</strong> Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/file/file.service.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>43</strong>, Column <strong>42</strong> </li>
+<li> To : Line <strong>43</strong>, Column <strong>46</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal">https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/www-community/attacks/Path_Traversal">  https://owasp.org/www-community/attacks/Path_Traversal</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-22: Improper Limitation of a Pathname to a Restricted Directory (&#39;Path Traversal&#39;)</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A05:2017 - Broken Access Control</li>
+    
+        <li> A01:2021 - Broken Access Control</li>
+    
+        <li> A01:2025 - Broken Access Control</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> javascript, node.js</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal </h5>
+</div>
+
+<p><strong>Description :</strong> Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/file/hidden-upload.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>51</strong>, Column <strong>51</strong> </li>
+<li> To : Line <strong>51</strong>, Column <strong>61</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal">https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/www-community/attacks/Path_Traversal">  https://owasp.org/www-community/attacks/Path_Traversal</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-22: Improper Limitation of a Pathname to a Restricted Directory (&#39;Path Traversal&#39;)</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A05:2017 - Broken Access Control</li>
+    
+        <li> A01:2021 - Broken Access Control</li>
+    
+        <li> A01:2025 - Broken Access Control</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> javascript, node.js</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal </h5>
+</div>
+
+<p><strong>Description :</strong> Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/main.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>254</strong>, Column <strong>61</strong> </li>
+<li> To : Line <strong>254</strong>, Column <strong>65</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-warning">Medium</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal">https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://owasp.org/www-community/attacks/Path_Traversal">  https://owasp.org/www-community/attacks/Path_Traversal</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-22: Improper Limitation of a Pathname to a Restricted Directory (&#39;Path Traversal&#39;)</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A05:2017 - Broken Access Control</li>
+    
+        <li> A01:2021 - Broken Access Control</li>
+    
+        <li> A01:2025 - Broken Access Control</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> javascript, node.js</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.express.security.audit.express-libxml-vm-noent.express-libxml-vm-noent </h5>
+</div>
+
+<p><strong>Description :</strong> Detected use of parseXml() function with the `noent` field set to `true`. This can lead to an XML External Entities (XXE) attack if untrusted data is passed into it. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/users/users.controller.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>608</strong>, Column <strong>24</strong> </li>
+<li> To : Line <strong>612</strong>, Column <strong>11</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-danger">High</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.express.security.audit.express-libxml-vm-noent.express-libxml-vm-noent">https://semgrep.dev/r/javascript.express.security.audit.express-libxml-vm-noent.express-libxml-vm-noent</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html">  https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-611: Improper Restriction of XML External Entity Reference</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A04:2017 - XML External Entities (XXE)</li>
+    
+        <li> A05:2021 - Security Misconfiguration</li>
+    
+        <li> A02:2025 - Security Misconfiguration</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> express</p>
+
+
+
+
+
+<hr>
+
+
+
+
+<div class="p-2 alert 
+
+    alert-warning
+ rounded-0 mb-2"> 
+    <h5>Check for  javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop </h5>
+</div>
+
+<p><strong>Description :</strong> Possibility of prototype polluting function detected. By adding or modifying attributes of an object prototype, it is possible to create attributes that exist on every object, or replace critical attributes with malicious ones. This can be problematic if the software depends on existence or non-existence of certain attributes, or uses pre-defined attributes of object prototype (such as hasOwnProperty, toString or valueOf). Possible mitigations might be: freezing the object prototype, using an object without prototypes (via Object.create(null) ), blocking modifications of attributes that resolve to object prototype, using Map instead of object. </p>
+
+<p> <strong>Source File :</strong> brokencrystals/src/utils/url.ts </p>
+
+<p><strong>Finding location :</strong>
+<ul>
+<li> From : Line <strong>56</strong>, Column <strong>13</strong> </li>
+<li> To : Line <strong>61</strong>, Column <strong>22</strong> </li>
+</ul>
+<pre><code class="java"> Preview unavailable, please refer to the line delimiters.</code></pre>
+
+<p>
+    <strong>Issue characteristics : </strong>
+    <span>Severity:  
+    
+        <strong class="text-warning">Moderate</strong>
+    
+    </span> /
+    <span>Confidence:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Impact:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span> /
+    <span>Likelihood:  
+    
+        <strong class="text-primary">Low</strong>
+    
+    </span>
+</p>
+
+
+
+
+
+<strong>Scan rule: </strong>
+<ul>
+    <li><a href="https://semgrep.dev/r/javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop">https://semgrep.dev/r/javascript.lang.security.audit.prototype-pollution.prototype-pollution-loop.prototype-pollution-loop</a></li>
+</ul>
+
+
+<strong>References: </strong>
+<ul>
+
+<li><a href="https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf">  https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf</a></li>
+
+</ul>
+
+
+
+
+
+
+<strong>CWE Weakness: </strong>
+<ul>
+
+
+    
+        <li> CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes</li>
+    
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<strong>OWASP Issue: </strong>
+<ul>
+
+
+    
+        <li> A08:2021 - Software and Data Integrity Failures</li>
+    
+        <li> A08:2025 - Software or Data Integrity Failures</li>
+    
+
+
+
+</ul>
+
+<p><strong>Tags: </strong> typescript</p>
+
+
+
+
+
+<hr>
+
+
+
+<p class="mt-2 text-end text-secondary">Report generated using Semgrep Community Edition version 1.168.0 JSON</p>
+
+</div>
+</body>
+</html>
