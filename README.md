@@ -55,3 +55,9 @@ Os arquivos deste repositório correspondem aos artefatos e evidências produzid
 ## Observação
 
 Este repositório possui finalidade **exclusivamente acadêmica e educacional**. As análises e explorações descritas foram realizadas em ambientes destinados à prática de segurança da informação.
+
+---
+
+
+
+Feito com 💙 por Isis Lavor! Bons estudos.
